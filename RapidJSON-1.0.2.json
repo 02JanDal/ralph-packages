@@ -1,0 +1,17 @@
+{
+  "name": "RapidJSON",
+  "version": "1.0.2",
+  "mirrors": [
+    {
+      "git": "https://github.com/miloyip/rapidjson.git#3d5848a",
+      "steps": [
+        "git-submodule-setup",
+        "cmake-config",
+        {
+          "type": "cmake-build",
+          "targets": ["install"]
+        }
+      ]
+    }
+  ]
+}
